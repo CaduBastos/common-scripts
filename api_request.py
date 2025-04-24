@@ -1,7 +1,7 @@
 import requests
 from datetime import datetime 
 
-open_wheather_api_key = "96b420e3fb1703c366657ad85a4de20e"
+open_wheather_api_key = input("Open Wheather API Key: ")
 
 #Pelotas-RS latitude and longitude
 lat = "-31.776"
