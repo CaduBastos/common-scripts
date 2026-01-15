@@ -8,14 +8,14 @@ To use just put the `database_correct.db` and `database.db` at the project folde
 
 :heavy_check_mark: Databases are structurally equals:
 
-- `Database automacao.db is struturally correct!`
+`Database automacao.db is struturally correct!`
 
 
 :x: Databases aren't structurally equals:
 ```
-- Database automacao.db has structural issues:
-  [TABLE MISSING] table [teste_4] exists in correct db but not in the other db file
-  [COLUMN MISMATCH] table [sensors] column [address] differs:
-  correct db: {'type': 'INT', 'notnull': 0, 'default': '0', 'primary_key': 0}
-  automacao.db: {'type': 'INT', 'notnull': 1, 'default': '0', 'primary_key': 0}
+Database automacao.db has structural issues:
+[TABLE MISSING] table [teste_4] exists in correct db but not in the other db file
+[COLUMN MISMATCH] table [sensors] column [address] differs:
+correct db: {'type': 'INT', 'notnull': 0, 'default': '0', 'primary_key': 0}
+automacao.db: {'type': 'INT', 'notnull': 1, 'default': '0', 'primary_key': 0}
 ```
