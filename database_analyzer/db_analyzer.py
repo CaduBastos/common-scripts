@@ -1,3 +1,6 @@
+import argparse
+import os
+import sys
 import sqlite3
 
 def get_tables(db_path):                    # db path as parameter
@@ -18,14 +21,14 @@ def get_columns(db_path, table_name):       # db path and table name as paramete
         cursor = conn.cursor()              # create a cursor object    
         cursor.execute(f"PRAGMA table_info({table_name});")
         return {                            # get content of table_info and sort it
-              row[1]: { # column name
-                  "type": row[2],
-                  "notnull": row[3],
-                  "default": row[4],
-                  "primary_key": row[5]
-              }
-              for row in cursor.fetchall()  # fetch all results
-        }
+            row[1]: { # column name
+                "type": row[2],
+                "notnull": row[3],
+                "default": row[4],
+                "primary_key": row[5]
+            }
+            for row in cursor.fetchall()  # fetch all results
+    }
     
 def compare_schemas(db_ri, db_an):
    
@@ -62,7 +65,7 @@ def compare_schemas(db_ri, db_an):
                 report.append(
                     f"[COLUMN MISMATCH] table [{table}] column [{col}] differs:\n"
                     f"  correct db: {ri}\n"
-                    f"  automacao.db: {an}"
+                    f"  database.db: {an}"
                 ) 
              
     return report
