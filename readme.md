@@ -6,21 +6,20 @@
 ![C++](https://img.shields.io/badge/language-C%2B%2B-blueviolet)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-A collection of header files, scripts, and small utilities developed during
-academic coursework and professional projects.
+This repository is dedicated to **study, experimentation, and skill development**
+in programming and software engineering.
 
-
-This repository stores header files, scripts, and small software tools
-developed by me for specific academic classes and professional work challenges.
+It contains a collection of header files, scripts, and small utilities developed
+primarily for **academic study**, technical practice, and exploratory projects.
+Some materials may also originate from coursework or professional-inspired
+challenges, but the main goal is learning and experimentation.
 
 ## Contents
 
-- **Scripts**: Shell and Python scripts for automation and analysis
-- **Tools**: Small utilities and command-line tools
-- **Headers**: Reusable C and C++ header files
+- **Scripts**: Shell and Python scripts for study, automation, and analysis  
+- **Tools**: Small utilities and command-line tools created for learning purposes  
+- **Headers**: Reusable C and C++ header files developed during practice and coursework  
 
 ## License
 
 This project is licensed under the MIT License.
-
-
